@@ -9,27 +9,65 @@
 </head>
 
 <body>
+
     <div class="container">
         <h1>About Me Generator</h1>
         <form id="aboutForm">
-            <input type="text" id="name" placeholder="Your name" required>
-            <input type="number" id="age" placeholder="Your age" required>
-            <input type="text" id="color" placeholder="Favorite color">
-            <input type="text" id="food" placeholder="Favorite food">
-            <input type="text" id="hobby" placeholder="Your hobby">
-            <input type="text" id="goal" placeholder="Your goal">
-            <input type="text" id="motivation" placeholder="What motivates you?">
-            <input type="text" id="fear" placeholder="What’s your biggest fear?">
-            <input type="text" id="dreamPlace" placeholder="Dream place to visit">
-            <input type="text" id="dreamJob" placeholder="Your dream job">
-            <input type="text" id="successMeaning" placeholder="What does success mean to you?">
-            <input type="text" id="favoriteQuote" placeholder="Your favorite quote">
-            <input type="text" id="accomplishment" placeholder="Biggest accomplishment">
-            <textarea id="additionalInfo" placeholder="Anything else you'd like to add?"></textarea>
-            <button type="submit">Generate About Me</button>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required>
+
+            <label for="age">Your Age</label>
+            <input type="number" id="age" required>
+
+            <label for="hobby">Your Favorite Hobby</label>
+            <input type="text" id="hobby" required>
+
+            <label for="color">Favorite Color</label>
+            <input type="text" id="color">
+
+            <label for="food">Favorite Food</label>
+            <input type="text" id="food">
+
+            <label for="goal">Your Goal in Life</label>
+            <input type="text" id="goal">
+
+            <label for="motivation">What Motivates You?</label>
+            <input type="text" id="motivation">
+
+            <label for="fear">Biggest Fear</label>
+            <input type="text" id="fear">
+
+            <label for="dreamPlace">Dream Vacation Spot</label>
+            <input type="text" id="dreamPlace">
+
+            <label for="dreamJob">Dream Job</label>
+            <input type="text" id="dreamJob">
+
+            <label for="successMeaning">What Does Success Mean to You?</label>
+            <input type="text" id="successMeaning">
+
+            <label for="favoriteQuote">Favorite Quote</label>
+            <input type="text" id="favoriteQuote">
+
+            <label for="accomplishment">Greatest Accomplishment</label>
+            <input type="text" id="accomplishment">
+
+            <label for="additionalInfo">Additional Information</label>
+            <input type="text" id="additionalInfo">
+
+            <label for="layoutSelect">Choose a Layout</label>
+            <select id="layoutSelect">
+                <option value="classic">Classic</option>
+                <option value="boldHeadings">Bold Headings</option>
+                <option value="quoteStyle">Quote Style</option>
+            </select>
+
+            <button type="submit">Generate</button>
         </form>
-        <div id="result"></div>
+
+        <div id="result"></div> <!-- The generated "About Me" bio will appear here -->
     </div>
+
     <script src="assets/js/script.js"></script>
 </body>
 
